@@ -16,6 +16,7 @@ Saludos!
 
 console.log("Bienvenido a VIZOL, donde tu mate te encuentra a vos");
 
+let stockDeMatesCopia=[]
 
 class Mate {
   constructor(id, modelo, color, precio, stock) {
@@ -37,6 +38,7 @@ let numero =prompt("Ingrese el numero :\n 1: Mates Disponibles \n 2: Hace tu ped
 while (numero === "" || isNaN(numero) ) {
 
     console.log("Vuelva a intentarlo")
+    break
 
     }
 
@@ -59,7 +61,7 @@ while (numero === "" || isNaN(numero) ) {
       numero =console.log(prompt("Ingrese el numero :\n 1: Mates Disponibles \n 2: Hace tu pedido! \n 3: Salir"))
 }
 function stockParaConsulta(){
-  const stockDeMatesCopia=stockDeMates.map((x)=>{
+  stockDeMatesCopia=stockDeMates.map((x)=>{
     return{
       modelo:x.modelo,
       color:x.color,
@@ -80,16 +82,17 @@ function stockParaConsulta(){
 function pedidoDeMate(){
     const modelo = prompt("Ingrese el modelo de mate que desea:")
     const color = prompt("Ingrese el color:")
-    
-    pedido = (modelo,color)
+    const nuevoMate = new Mate(stockDeMates.length + 1, modelo, color, 0, 0); 
 
-}
+    if (pedidoDelCliente(nuevoMate)) {
+      console.log("Pedido realizado con éxito");
+    } else {
+      console.log("Error al realizar el pedido");
+    }
+  }
 
 function pedidoDelCliente(pedido) {
-  if (pedido==isNaN) {
-    console.log("Ha ingresado datos incorrectos,vuelva a intentarlo")
-    return false
-  }
   stockDeMatesCopia.push(pedido)
-  return true
+  return true;
   }
+console.log(stockDeMatesCopia)
