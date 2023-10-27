@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>VIZOL</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="vizolFinal.js"></script>
+    <link rel="stylesheet" type="text/css" href="styleFinal.css">
+</head>
+<body>
+    <header id="header">
+        <h1>VIZOL</h1>
+    </header>
+
+    <div id="contenedor" class="contenedor">
+        <section id="mates">
+            <div class="mates" id="agregarImperial">
+                <div class="imperial">
+                    <p id="cardNombre">Imperial</p>
+                    <img src="imgs/imperial.jpg" alt="producto 1">
+                    <p class="precio">$11999</p>
+                    <button id="agregarImperial" type="submit">Agregar</button>
+                </div>
+            </div>
+            <div class="mates" id="agregarCamionero">
+                <div class="camionero">
+                    <p id="cardNombre">Camionero</p>
+                    <img src="imgs/camionero.webp" alt="producto 2">                   
+                    <p class="precio">$9899</p>
+                    <button id="agregarCamionero" type="submit">Agregar</button>
+                </div>
+            </div>
+            <div class="mates" id="agregarTorpedo">
+                <div class="torpedo">
+                    <p id="cardNombre">Torpedo</p>
+                    <img src="imgs/torpedo.jpg" alt="producto 3">                   
+                    <p class="precio">$11499</p>
+                    <button id="agregarTorpedo" type="submit">Agregar</button>
+                </div>
+            </div>
+            <div class="mates" id="agregarBocon">
+                <div class="bocon">
+                    <p id="cardNombre" >Bocón</p>
+                    <img src="imgs/bocon.jpg"  alt="producto 4">                   
+                    <p class="precio">$7499</p>
+                    <button id="agregarBocon" type="submit">Agregar</button>
+                </div>
+            </div>
+        </section>
+        
+        <div id="carrito-container">
+            <div id="carrito">
+                <h2>Carrito de Compras</h2>
+                <ul id="lista-carrito"></ul>
+                <p id="total">Total: $0.00</p>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <form id="miFormulario">
+        <p>Ingrese nombre, apellido, edad y telefono</p>
+        <input id="nombre" type="text">
+        <input id="apellido" type="text">
+        <input id="edad" type="number">
+        <input id="telefono" type="number">
+        <button id="enviarFormulario" type="button">Enviar</button>
+        <button class="resetear" type="reset">Eliminar</button>
+    </form>
+
+    <form id="miPedido">
+        <p id="hpedido">¡Hacenos tu pedido!</p>
+        <input id="modelo" type="text" placeholder="Modelo">
+        <input id="color" type="text" placeholder="Color">
+        <button class="dos" type="button">Enviar</button>
+        <button class="resetear" type="reset">Eliminar</button>
+    </form>
+
+    <footer>
+        <section>
+            <a href="#">Ir al inicio</a>
+            <a href="vizol@gmail.com">Contacto</a>
+        </section>
+        <p>Copyright 2023</p>
+    </footer>
+</body>
+</html>
