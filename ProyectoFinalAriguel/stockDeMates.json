@@ -1,32 +1,32 @@
 {
     "stockDeMates": [
         {
-            "id": "1",
+            "id": 1,
             "modelo": "imperial",
             "color": "negro",
-            "precio": "12000",
-            "stock": "15"
+            "precio": 12000,
+            "stock": 15
         },
         {
-            "id": "2",
+            "id": 2,
             "modelo": "camionero",
             "color": "negro",
-            "precio": "9900",
-            "stock": "5"
+            "precio": 9900,
+            "stock": 5
         },
         {
-            "id": "3",
+            "id": 3,
             "modelo": "torpedo",
             "color": "negro",
-            "precio": "11499",
-            "stock": "12"
+            "precio": 11499,
+            "stock": 12
         },
         {
-            "id": "4",
+            "id": 4,
             "modelo": "bocon",
             "color": "negro",
-            "precio": "7499",
-            "stock": "7"
+            "precio": 7499,
+            "stock": 7
         }
     ]
 }
