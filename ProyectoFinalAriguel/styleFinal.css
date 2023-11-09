@@ -195,6 +195,22 @@ button.dos:hover {
     background-color: #0b4336;
 }
 
+#boton-comprar {
+    background-color: #272726;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#boton-comprar:hover {
+    background-color: rgb(85, 27, 27);
+}
+
+
 #hpedido {
     font-size: 3rem;
     text-align: center;
